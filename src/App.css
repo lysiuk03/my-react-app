@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+/* Визначення ключового кадру анімації обертання логотипу */
+@keyframes logo-spin {
+  /* Початковий стан анімації - без обертання (0 градусів) */
+  from {
+    transform: rotate(0deg);
+  }
+  /* Кінцевий стан анімації - повний оберт на 360 градусів */
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Перевірка, чи користувач не встановив обмеження на анімацію */
+@media (prefers-reduced-motion: no-preference) {
+  /* Застосування анімації до другого логотипу в навігаційному меню */
+  a:nth-of-type(2) .logo {
+    /* Нескінченна анімація обертання протягом 20 секунд, лінійна зміна */
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

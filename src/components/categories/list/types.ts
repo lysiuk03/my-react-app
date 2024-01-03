@@ -1,0 +1,6 @@
+// Визначення інтерфейсу ICategoryItem
+export interface ICategoryItem {
+    id: number;
+    name: string;
+    image: string;
+}
