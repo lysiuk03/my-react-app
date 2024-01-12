@@ -36,8 +36,22 @@ const CategoriesListPage : React.FC = () => {
                 );
             }
         },
-    ];
-
+        {
+            title: "Дії",
+            dataIndex: "id",
+            render: (categoryId: number) => (
+                <>
+                    <Link to={`/edit/${categoryId}`}>
+                        <Button type="primary">Редагувати</Button>
+                    </Link>
+                    <Link to={`/delete/${categoryId}`}>
+                        <Button type="text" danger style={{ marginLeft: '8px' }}>Видалити</Button>
+                    </Link>
+                </>
+),
+},
+]
+    ;
     // Ефект для завантаження списку категорій при завантаженні компоненту
     useEffect(() => {
         //console.log("useEffect working");

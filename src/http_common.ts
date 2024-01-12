@@ -9,5 +9,6 @@ const http_common = axios.create({
         "Content-Type": "application/json" // Встановлення заголовка Content-Type для JSON-даних
     }
 });
+
 // Експорт створеного інстансу для використання в інших частинах програми
 export default  http_common;
