@@ -39,17 +39,27 @@ const ContainerDefault : React.FC = () => {
                             {
                                 key: '1',
                                 icon: <UserOutlined />,
-                                label: <Link to={"/"}>Головна</Link> ,
+                                label: <Link to={"/"}>Список категорій</Link> ,
                             },
                             {
                                 key: '2',
+                                icon: <UserOutlined />,
+                                label: <Link to="/products">Продукти</Link>,
+                            },
+                            {
+                                key: '3',
                                 icon: <VideoCameraOutlined />,
                                 label: <Link to={"/create"}>Додати категорію</Link>,
                             },
                             {
-                                key: '3',
+                                key: '4',
+                                icon: <VideoCameraOutlined />,
+                                label: <Link to={"/product/create"}>Додати продукт</Link>,
+                            },
+                            {
+                                key: '5',
                                 icon: <UploadOutlined />,
-                                label: 'nav 3',
+                                label: <Link to={"/register"}>Реєстрація</Link>,
                             },
                         ]}
                     />

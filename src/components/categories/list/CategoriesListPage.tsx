@@ -5,6 +5,7 @@ import {Button, Table} from "antd";
 import http_common from "../../../http_common.ts";
 import {APP_ENV} from "../../../env";
 import {Link} from "react-router-dom";
+import "./styles.css";
 
 // Оголошення функціонального компоненту CategoriesListPage
 const CategoriesListPage : React.FC = () => {
@@ -64,7 +65,7 @@ const CategoriesListPage : React.FC = () => {
     console.log("Render component");
     // Вивід компоненту
     return (
-        <>
+        <div className="scrollable-container">
             <h1>Список категорій</h1>
             {/* Використання компонента Link для переходу на сторінку створення категорії */}
             <Link to="/create">
@@ -74,8 +75,8 @@ const CategoriesListPage : React.FC = () => {
                 </Button>
             </Link>
             {/* Використання компонента Table для відображення списку категорій */}
-            <Table columns={columns} rowKey={"id"} dataSource={list} size={"middle"} />
-        </>
+            <Table columns={columns} rowKey={"id"} dataSource={list} size={"middle"}/>
+        </div>
     )
 }
 
